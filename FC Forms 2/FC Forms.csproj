@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1A6FB94-C710-46FB-BF4B-A3BBB6ECB2D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication1</RootNamespace>
+    <AssemblyName>FC Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Radhir.RADRAV2\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <UICulture>en-US</UICulture>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>flashcards.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>596D2F5304AC6CAF4110D28915507A129F9407FE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FC Forms_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.Ink">
+      <HintPath>..\..\..\..\..\..\..\Program Files %28x86%29\Microsoft Tablet PC Platform SDK\Include\Microsoft.Ink.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Access, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.PowerPoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoMath.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AutoMath.Designer.cs">
+      <DependentUpon>AutoMath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Card.cs" />
+    <Compile Include="CardList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CardList.designer.cs">
+      <DependentUpon>CardList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="CreateCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateCard.designer.cs">
+      <DependentUpon>CreateCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateCardStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateCardStudent.designer.cs">
+      <DependentUpon>CreateCardStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deck.cs" />
+    <Compile Include="DeckSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeckSummary.Designer.cs">
+      <DependentUpon>DeckSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Find.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Find.Designer.cs">
+      <DependentUpon>Find.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenWF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenWF.Designer.cs">
+      <DependentUpon>OpenWF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MixMatchStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MixMatchStudent.designer.cs">
+      <DependentUpon>MixMatchStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MixMatchTeacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MixMatchTeacher.Designer.cs">
+      <DependentUpon>MixMatchTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayGameStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayGameStudent.Designer.cs">
+      <DependentUpon>PlayGameStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayGameTeacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlayGameTeacher.Designer.cs">
+      <DependentUpon>PlayGameTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveDeck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveDeck.Designer.cs">
+      <DependentUpon>SaveDeck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardStudent.Designer.cs">
+      <DependentUpon>DashboardStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCardsStudent.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditCardsStudent.designer.cs">
+      <DependentUpon>EditCardsStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashboardTeacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DashboardTeacher.Designer.cs">
+      <DependentUpon>DashboardTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EditCardsTeacher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditCardsTeacher.designer.cs">
+      <DependentUpon>EditCardsTeacher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score.cs" />
+    <Compile Include="ScoreBoard.cs" />
+    <Compile Include="Login2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login2.Designer.cs">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScratchPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScratchPanel.Designer.cs">
+      <DependentUpon>ScratchPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowForm.Designer.cs">
+      <DependentUpon>WindowForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutoMath.resx">
+      <DependentUpon>AutoMath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CardList.resx">
+      <DependentUpon>CardList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCard.resx">
+      <DependentUpon>CreateCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateCardStudent.resx">
+      <DependentUpon>CreateCardStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeckSummary.resx">
+      <DependentUpon>DeckSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Find.resx">
+      <DependentUpon>Find.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenWF.resx">
+      <DependentUpon>OpenWF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MixMatchStudent.resx">
+      <DependentUpon>MixMatchStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MixMatchTeacher.resx">
+      <DependentUpon>MixMatchTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\x86\Debug\WindowsFormsApplication1.Login.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\WindowsFormsApplication1.TeacherDashboard.resources" />
+    <EmbeddedResource Include="PlayGameStudent.resx">
+      <DependentUpon>PlayGameStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayGameTeacher.resx">
+      <DependentUpon>PlayGameTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveDeck.resx">
+      <DependentUpon>SaveDeck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardStudent.resx">
+      <DependentUpon>DashboardStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCardsStudent.resx">
+      <DependentUpon>EditCardsStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashboardTeacher.resx">
+      <DependentUpon>DashboardTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCardsTeacher.resx">
+      <DependentUpon>EditCardsTeacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login2.resx">
+      <DependentUpon>Login2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScratchPanel.resx">
+      <DependentUpon>ScratchPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowForm.resx">
+      <DependentUpon>WindowForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="FC Forms_TemporaryKey.pfx" />
+    <None Include="Flashcards Installer\Debug\Flashcards Installer.msi" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\GenerateResource.read.1.tlog" />
+    <None Include="obj\x86\Debug\GenerateResource.write.1.tlog" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\FC Forms.vshost.exe" />
+    <Content Include="bin\Debug\WindowsFormsApplication1.exe" />
+    <Content Include="bin\Debug\WindowsFormsApplication1.pdb" />
+    <Content Include="bin\Debug\WindowsFormsApplication1.vshost.exe" />
+    <Content Include="bin\Release\pen.bmp" />
+    <Content Include="Flashcards Installer\Debug\setup.exe" />
+    <Content Include="Flashcards Installer\Flashcards Installer.vdproj" />
+    <Content Include="flashcards.ico" />
+    <Content Include="obj\x86\Debug\WindowsFormsApplication1.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\WindowsFormsApplication1.exe" />
+    <Content Include="obj\x86\Debug\WindowsFormsApplication1.pdb" />
+    <Content Include="bin\Debug\pen.bmp" />
+    <None Include="Resources\button.finish.png" />
+    <None Include="Resources\button.newcard.png" />
+    <None Include="Resources\button.originalorder.png" />
+    <None Include="Resources\button.shuffle.png" />
+    <None Include="Resources\button.start.png" />
+    <None Include="Resources\button.toggleerase.png" />
+    <None Include="Resources\button.toggleink.png" />
+    <Content Include="Resources\eraser25x18.jpg" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\bgd dashboard_teacher.jpg" />
+    <None Include="Resources\open36.png" />
+    <None Include="Resources\save36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Flashcards Installer\Release\" />
+    <Folder Include="obj\x86\Debug\TempPE\" />
+    <Folder Include="obj\x86\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
